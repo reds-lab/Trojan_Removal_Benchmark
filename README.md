@@ -9,10 +9,10 @@ Deep Learning (DL) has made significant progress in recent years, resulting in v
 This document provides a detailed step-by-step guide on how to properly setup and use our bencmark. Please follow these instructions precisely to ensure everything works as intended.
 
 ### Step 1: Downloading the Dataset
-You can access the dataset we use for our tool by clicking here. Once downloaded, and place the dataset into `dataset` folder.
+You can access the dataset we use for our tool by [clicking here](https://drive.google.com/drive/folders/1iUpLA_HY8huJ2kYEnEzNMC5oChqe6vgN?usp=sharing). Once downloaded, and place the dataset into `dataset` folder.
 
 ### Step 2: Downloading the Poisoned Models
-Download the poisoned models by clicking here and put under `poisoned_models` folder.
+Download the poisoned models by [clicking here](https://drive.google.com/drive/folders/1IxrmLB9KiqpNrv6kvKA2YBo4wTW9bkAK?usp=sharing) and put under `poisoned_models` folder.
 
 ### Step 3: Implementing the Defense Function
 Congratulations on finishing the previous steps of this tutorial! You are now ready to apply your post-training defense to your model. To do this, you need to open the `quick_start.ipynb`, locate the `defense_function` and implement your post-training defense. Finally, run the notebook to see how your defense performs against various backdoor attacks!

@@ -12,8 +12,11 @@ class Blended():
     
     def img_poi(self, img):
         if self.mode == 'np':
-            img = cv2.resize(img, (self.img_size, self.img_size)) + self.noisy
-            img = np.clip(img,self.clip_range[0],self.clip_range[1])
+            if np.array(img).shape[1] != self.img_size:
+                img = cv2.resize(img, (self.img_size, self.img_size)) + self.noisy
+            else:
+                img = img + self.noisy
+            img = np.clip(img, self.clip_range[0],self.clip_range[1])
         else:
             img = torch.clip(img + self.noisy,self.clip_range[0],self.clip_range[1])
         return img
